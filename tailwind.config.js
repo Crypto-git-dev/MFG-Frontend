@@ -28,6 +28,10 @@ module.exports = {
 				"1xl": "1.3rem",
 				sm: "14px", // Another custom size
 				"6xl": "4.8rem", // Another custom size
+				lxl: "130px",
+			},
+			fontFamily: {
+				body: ["GT Walsheim Trial"],
 			},
 		},
 		colors: {

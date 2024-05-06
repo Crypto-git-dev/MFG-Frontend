@@ -9,92 +9,70 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
-		<div className="bg-blue">
-			<div className="pt-20 pb-14">
-				<div className="grid grid-cols-12">
-					<div className="col-span-12 mb-8 md:mb-0  md:col-span-5 flex justify-center  ">
-						<img
-							src="/images/logo.png"
-							onClick={() => (window.location.href = "/")}
-							className="md:w-1/3 xl:w-1/4 p-3 text-white10 cursor-pointer"
-							alt="no-logo"
-						/>
+		<div class="flex bg-blue-900 text-white py-12">
+			<div class="grid w-full">
+				<div class="flex items-center justify-center gap-10 px-20 py-5 bg-[#F7C926]">
+					<div class="text-5xl font-bold mb-4">
+						JOIN THE DISCUSSION WITH OUR TEAM
 					</div>
-					<div className="col-span-12 px-12 md:p-0 sm:col-span-6 md:col-span-3  text-white10 font-medium items-center flex justify-between">
-						<div>Product</div>
-						<div
-							className="cursor-pointer"
-							onClick={() => (window.location.href = "/#pricing-section")}
-						>
-							Pricing
+					<div class="bg-[#F7C926] font-bold py-4 px-4 rounded-full border-black border">
+						<img src="images/DownArrow.svg"></img>
+					</div>
+					<div class="w-1/6"></div>
+				</div>
+				<div class="bg-[#002E5D] text-right px-20 grid py-10">
+					<div class="flex gap-5 justify-between items-center">
+						<div class="flex items-center">
+							<img src="images/group2.svg" alt="MFG Logo" class="h-8" />{" "}
+							{/* Adjust the path and size as needed */}
+							<div class="flex flex-col py-3 text-white10">
+								<div class="text-lg">MFG</div>
+								<span class="text-xs">Myth Financial Group</span>
+							</div>
+						</div>
+						<div class="text-white10">
+							500 Terry Francine Street, San Francisco, CA 94158
 						</div>
 						<div>
-							<Link to="/contact">Contact Us</Link>
+							<a
+								href="#"
+								class="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+							>
+								<i class="fa fa-facebook">f</i>
+							</a>
+							<a
+								href="#"
+								class="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+							>
+								<i class="fa fa-xing">x</i>
+							</a>
+							<a
+								href="#"
+								class="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+							>
+								<i class="fa fa-linkedin">in</i>
+							</a>
 						</div>
 					</div>
-					<div className="col-span-12 mt-8 md:mt-0 md:col-span-4  items-center text-2xl  gap-8 flex justify-center">
-						<FontAwesomeIcon
-							color="white"
-							icon={faTwitter}
-							onClick={() => {
-								window.open("https://twitter.com/", "_blank");
-							}}
-							className="cursor-pointer"
-						/>
-						<FontAwesomeIcon
-							color="white"
-							icon={faFacebookF}
-							className="cursor-pointer"
-							onClick={() => {
-								window.open("https://meta.com/", "_blank");
-							}}
-						/>
-						<FontAwesomeIcon
-							color="white"
-							onClick={() => {
-								window.open("https://instagram.com/", "_blank");
-							}}
-							icon={faInstagram}
-							className="cursor-pointer"
-						/>
-						<FontAwesomeIcon
-							color="white"
-							icon={faGithub}
-							onClick={() => {
-								window.open("https://github.com/", "_blank");
-							}}
-							className="cursor-pointer"
-						/>
+					<div class="flex items-center border-y-2 border-[#204871] py-5 justify-between">
+						<div class="text-grey10 text-xs w-1/3 text-left">
+							At Myth Financial Group, we believe in fearless investments in the
+							future of families. We specialize in providing life insurance
+							coverage in over 5 industries, including healthcare, education,
+							and technology. Our team of experts is dedicated to providing you
+							with the best life insurance solutions that are tailored to your
+							specific needs and requirements.
+						</div>
+						<div class="bg-[#F7C926] font-bold py-4 px-4 rounded-full border-black border">
+							<img src="images/DownArrow.svg"></img>
+						</div>
+					</div>
+					<div class="flex text-white10 justify-between text-xs py-5">
+						<div>© 2024 by Roland VC. Powered and secured by Wix</div>
+						<div>info@mysite.com</div>
+						<div>123-456-7890</div>
 					</div>
 				</div>
-			</div>
-			{/*  */}
-			<div className="grid pb-8 grid-cols-12">
-				{/* <div className="col-span-6 px-4 md:px-0 md:col-span-5  text-white10 flex justify-center">
-					<div className="flex flex-col text-center">
-						MarketNyze:
-						<div>7952 Nagle Avenue</div>
-						<span>North Hollywood, CA 91605</span>
-					</div>
-				</div> */}
-				<div className="col-span-6 px-4 md:px-0 md:col-span-3  text-white10 flex justify-end">
-					<div className="flex flex-col">
-						Email
-						<div>info@marketnyze.com</div>
-					</div>
-				</div>
-				<div className="col-span-12 md:col-span-4  ml-12 mt-6 md:m-0  flex md:justify-center">
-					<div className="flex text-white10 flex-col">
-						Phone:
-						<div>(209)-123-4567</div>
-					</div>
-				</div>
-			</div>
-			<div className="border-b border-white10 pt-8 pb-4" />
-			<div className="flex items-center justify-center ">
-				<p className="text-white10 p-4">
-					© COPYRIGHT 2023. ALL RIGHTS RESERVED
-				</p>
 			</div>
 		</div>
 	);

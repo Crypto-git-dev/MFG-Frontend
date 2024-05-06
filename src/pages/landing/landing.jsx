@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import Companies from "../../components/companies/companies";
 import Features from "../../components/features/features";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
-import Map from "../../components/map/map";
-import Pricing from "../../components/pricing/pricing";
-import About from "../../components/about/about"
+import Blogs from "../../components/blogs/blogs";
+import About from "../../components/about/about";
+import Contact from "../../components/contact/contact";
+import Investor from "../../components/investor/investor";
 
 const Landing = () => {
 	useEffect(() => {
@@ -22,7 +22,7 @@ const Landing = () => {
 	}, []);
 	return (
 		<div>
-			<div className="px-8 md:px-24  py-8  ">
+			<div className="px-16 md:px-48 py-8">
 				<Header />
 				<section id="about">
 					<About />
@@ -30,11 +30,15 @@ const Landing = () => {
 				<section id="features">
 					<Features />
 				</section>
-				<section id="pricing-section" >
-					<Pricing />
+				<section id="blogs">
+					<Blogs />
 				</section>
-
-				<Map />
+				<section id="contact">
+					<Contact />
+				</section>
+				<section id="investors">
+					<Investor />
+				</section>
 			</div>
 			<div>
 				<Footer />
