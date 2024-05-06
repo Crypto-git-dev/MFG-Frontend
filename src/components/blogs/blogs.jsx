@@ -5,11 +5,14 @@ const blogs = [
 		title: "Life Insurance Awareness Month",
 		date: "September 1, 2021",
 		subcaption: "How to Choose the Right Life Insurance Coverage",
+		imgurl: "images/205002500 1.jpg",
 	},
 	{
-		title: "Life Insurance Awareness Month",
-		date: "September 1, 2021",
+		title:
+			"Why Myth Financial Group is the Best Choice for Life Insurance Coverage",
+		date: "September 10, 2021",
 		subcaption: "September 20, 2021",
+		imgurl: "images/528447540 1.jpg",
 	},
 ];
 
@@ -20,17 +23,15 @@ const Blogs = () => {
 				<h2 class="text-2xl font-extrabold text-gray-900 mb-8 text-center">
 					OUR BLOGS
 				</h2>
-				<div class="grid grid-cols-2 gap-8">
+				<div class="grid grid-cols-2 gap-16">
 					{blogs.map((blog) => (
-						<div class="bg-gray-100 p-4 rounded-2xl border-grey10 border">
-							<div class="h-48 bg-gray-300 rounded-md mb-4"></div>
-							<div class="flex justify-between text-center">
-								<div class="text-sm font-semibold text-center">
-									{blog.title}
-								</div>
-								<div class="text-xs text-grey10 mb-4 text-center">
-									{blog.date}
-								</div>
+						<div class="bg-gray-100 p-4 px-10 rounded-2xl border-grey10 border">
+							<div class="h-54 bg-gray-300 rounded-md mb-4">
+								<img src={blog.imgurl}></img>
+							</div>
+							<div class="flex justify-between text-center gap-8">
+								<div class="text-sm font-semibold text-left">{blog.title}</div>
+								<div class="text-xs text-grey10 text-center">{blog.date}</div>
 							</div>
 							<div class="border-grey10 border"></div>
 							<div class="text-grey10 pt-4 w-2/3">{blog.subcaption}</div>
