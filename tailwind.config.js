@@ -54,6 +54,7 @@ module.exports = {
 			gray70: "#585757",
 			pink10: "#7F56D9",
 			blue100: "#282B6D",
+			yellow500: "#F7C926",
 		},
 	},
 	plugins: [],

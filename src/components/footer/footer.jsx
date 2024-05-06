@@ -16,7 +16,7 @@ const Footer = () => {
 						JOIN THE DISCUSSION WITH OUR TEAM
 					</div>
 					<div class="bg-[#F7C926] font-bold py-4 px-4 rounded-full border-black border">
-						<img src="images/DownArrow.svg"></img>
+						<img src="images/Gotocontact.svg"></img>
 					</div>
 					<div class="w-1/6"></div>
 				</div>
@@ -33,22 +33,22 @@ const Footer = () => {
 						<div class="text-white10">
 							500 Terry Francine Street, San Francisco, CA 94158
 						</div>
-						<div>
+						<div class="flex gap-2">
 							<a
 								href="#"
-								class="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+								class="bg-gray-700 px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
 							>
 								<i class="fa fa-facebook">f</i>
 							</a>
 							<a
 								href="#"
-								class="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+								class="bg-gray-700 px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
 							>
 								<i class="fa fa-xing">x</i>
 							</a>
 							<a
 								href="#"
-								class="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+								class="bg-gray-700 px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
 							>
 								<i class="fa fa-linkedin">in</i>
 							</a>

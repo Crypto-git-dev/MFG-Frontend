@@ -28,26 +28,26 @@ const Contact = (props) => {
 				</div>
 				<div>
 					<form action="#" method="POST">
-						<div class="grid grid-cols-2 gap-5">
+						<div class="grid grid-cols-2 gap-5 ">
 							<input
 								type="text"
 								placeholder="Name"
-								class="w-full mb-4 px-4 py-2 border rounded-full bg-[#F7C926] focus:outline-none focus:border-yellow-500"
+								class="w-full mb-4 px-4 py-2 border rounded-full focus:bg-[#F7C926] focus:outline-none focus:border-yellow500"
 							/>
 							<input
 								type="email"
 								placeholder="Email"
-								class="w-full mb-4 px-4 py-2 border rounded-full text-gray-700 focus:outline-none focus:border-yellow-500"
+								class="w-full mb-4 px-4 py-2 border rounded-full focus:bg-[#F7C926] focus:outline-none focus:border-yellow500"
 							/>
 							<input
 								type="tel"
 								placeholder="Phone"
-								class="w-full mb-4 px-4 py-2 border rounded-full text-gray-700 focus:outline-none focus:border-yellow-500"
+								class="w-full mb-4 px-4 py-2 border rounded-full focus:bg-[#F7C926] focus:outline-none focus:border-yellow500"
 							/>
 							<input
 								type="text"
 								placeholder="Code"
-								class="w-full mb-4 px-4 py-2 border rounded-full text-gray-700 focus:outline-none focus:border-yellow-500"
+								class="w-full mb-4 px-4 py-2 border rounded-full focus:bg-[#F7C926] focus:outline-none focus:border-yellow500"
 							/>
 						</div>
 						<div class="flex justify-center">
