@@ -1,0 +1,11 @@
+.card-text {
+	color: black;
+}
+
+.card-text:hover {
+	color: white;
+}
+.bg-brand:hover {
+  background-color: #226692;
+}
+

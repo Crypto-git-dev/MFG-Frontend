@@ -1,0 +1,31 @@
+.toggle-switch {
+  width: 48px;
+  height: 24px;
+  margin-right: 10px;
+  background-color: #ddd;
+  border-radius: 12px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3px;
+  transition: left 0.3s ease;
+}
+
+input:checked + .toggle-switch {
+  background-color: #226692; /* Change this to your desired dark mode color */
+  
+}
+
+input:checked + .toggle-switch:before {
+  left: 27px;
+}

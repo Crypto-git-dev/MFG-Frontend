@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap");
+
+:root {
+	--body_bg: white;
+	--body_color: black;
+	--admin-bg: rgb(234 236 240);
+	--admin-title: gray;
+	--admin-border: rgb(227 227 227 / var(--tw-border-opacity));
+	--card-bg: white;
+	--card-header: rgb(128 128 128 / var(--tw-text-opacity));
+	--card-text: black;
+	--graph-bg: white;
+	--graph-title: black;
+	--table-head: #f9fafc;
+	--table-title: #919191;
+	--sidebar-bg: rgb(28 30 83);
+}
+
+[data-theme="dark"] {
+	--body_bg: black;
+	--body_color: white;
+	--admin-bg: rgb(35, 35, 35);
+	--admin-title: white;
+	--admin-border: rgb(227 227 227 / var(--tw-border-opacity));
+	--card-bg: rgb(96, 96, 96);
+	--card-header: rgb(197, 197, 197);
+	--card-text: white;
+	--graph-bg: rgb(19, 19, 19);
+	--graph-title: white;
+	--table-head: rgb(96, 96, 96);
+	--table-title: white;
+	--sidebar-bg: rgb(6, 6, 23);
+}
+body {
+	background-color: var(--body_bg);
+	font-family: "Roboto", sans-serif;
+}
+.logo-brand {
+	color: #226692 !important;
+}
+.bg-brand {
+	background-color: #226692 !important;
+}
+.text_brand {
+	color: #000000a1;
+	font-family: "Poppins", sans-serif;
+}
+.brand_color {
+	color: #226692 !important;
+}
+.InputContainer .InputElement {
+	border: #226692;
+	border-width: 10px !important;
+}
+.range {
+	outline: none;
+	overflow: hidden;
+	border-radius: 16px;
+	
+}
+
+.glass {
+    @apply h-5/6 w-5/6;
+}
+
+.profile_img {
+    @apply w-40 cursor-pointer;
+}
+
+.textbox {
+    @apply w-3/4;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(71, 71, 71, 0.043);
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-width: 4px;
+  border-color: #f9fafb; /* Use your desired border color */
+  flex-shrink: 0;
+  height: 75%; /* Use your desired height */
+  width: 30%; /* Use your desired width */
+  border-radius: 1.5rem; /* Use your desired border radius */
+  padding-top: 5rem; /* Use your desired padding top */
+  padding-right: 1.75rem; /* Use your desired padding right */
+  padding-bottom: 5rem; /* Use your desired padding bottom */
+  padding-left: 1.75rem; /* Use your desired padding left */
+  min-width: max-content;
+}
+
+
+.profile_img {
+  border: 4px solid #d1d5db; /* Use your desired border color */
+  width: 135px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.profile_img:hover {
+  border-color: #e5e7eb; /* Use your desired border hover color */
+}
+
+.textbox {
+  border: 0;
+  padding: 1rem 1.25rem; /* Use your desired padding */
+  border-radius: 0.75rem; /* Use your desired border radius */
+  width: 75%; /* Use your desired width */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 1.125rem; /* Use your desired font size */
+  outline: none;
+}
+
+.btn {
+  border: none;
+  background-color: #4f46e5; /* Use your desired background color */
+  width: 75%; /* Use your desired width */
+  padding: 1rem;
+  border-radius: 0.875rem; /* Use your desired border radius */
+  color: #ffffff; /* Use your desired text color */
+  font-size: 1.5rem; /* Use your desired font size */
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.1);
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #4338ca; /* Use your desired background hover color */
+}
+
+
+.btn:hover{
+    background-color: #ff6a6a;
+}
+
+.profile>input[type='file']{
+    display: none;
+}
+.react-multiple-carousel__arrow{
+ z-index: 50 !important;
+ background: #c3a358 !important;
+ bottom: 60px;
+ margin: -10px;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens, such as iPad */
+  .grid-cols-12 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-span-12,
+  .col-span-4 {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 820px) {
+  .text-1xl {
+    font-size: 1rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.25rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 1.5rem;
+  }
+}
