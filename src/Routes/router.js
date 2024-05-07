@@ -4,6 +4,7 @@ import AboutUs from "../pages/aboutUs/aboutUs";
 import Landing from "../pages/landing/landing";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
+import News from "../pages/news/news";
 
 const PageRouter = () => {
 	const headerRef = useRef(null);
@@ -17,6 +18,7 @@ const PageRouter = () => {
 				<Routes>
 					<Route exact path="/" element={<Landing />} />
 					<Route exact path="/about" element={<AboutUs />} />
+					<Route exact path="/news" element={<News />} />
 				</Routes>
 			</div>
 			<div>
