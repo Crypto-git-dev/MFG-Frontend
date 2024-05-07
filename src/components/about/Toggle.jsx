@@ -1,6 +1,7 @@
 import React from "react";
 
-const ToggleButton = () => {
+const ToggleButton = (props) => {
+	const { checked } = props;
 	return <img src="images/group6.svg"></img>;
 };
 

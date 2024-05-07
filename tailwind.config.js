@@ -7,6 +7,22 @@ module.exports = {
 			lineHeight: {
 				lHeight: "75px",
 			},
+			gradientColorStopPositions: {
+				37: "37%",
+				67: "67%",
+			},
+			linearGradients: {
+				"custom-gradient": [
+					"0% 0%",
+					"37% 0%",
+					"67% 0%",
+					"100% 0%",
+					"#ff0000",
+					"#00ff00",
+					"#0000ff",
+					"#ffff00",
+				],
+			},
 			height: {
 				custom1: "100vh",
 				200: "90px",
@@ -43,5 +59,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwindcss-gradients")],
 };

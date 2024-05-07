@@ -3,10 +3,18 @@ import ToggleButton from "./Toggle";
 
 const HeroSection = () => {
 	return (
-		<div className="bg-white py-16">
-			<div className="flex">
-				<img src="images/welcome.svg"></img>
-				<div className="justify-items-end">
+		<div className="grid bg-white py-16">
+			<div className="flex relative">
+				<h1
+					className="text-9xl bg-gradient-to-r inline-block text-transparent bg-clip-text"
+					style={{
+						"background-image":
+							"linear-gradient(to right, white 0%, #002E5D 20%, #002E5D 67%, white 100%)",
+					}}
+				>
+					WELCOME TO MYTH FINANCIAL GROUP
+				</h1>
+				<div className="justify-items-end absolute py-4 right-0">
 					<ToggleButton />
 				</div>
 			</div>
