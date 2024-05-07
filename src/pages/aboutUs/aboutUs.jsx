@@ -5,7 +5,7 @@ import About from "../../components/about/about";
 import Contact from "../../components/contact/contact";
 import Investor from "../../components/investor/investor";
 
-const Landing = () => {
+const AboutUs = () => {
 	useEffect(() => {
 		// Check if there's a URL fragment
 		const targetSection = window.location.hash;
@@ -39,4 +39,4 @@ const Landing = () => {
 	);
 };
 
-export default Landing;
+export default AboutUs;

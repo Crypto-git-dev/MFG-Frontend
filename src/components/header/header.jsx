@@ -1,6 +1,26 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
+	const locations = useLocation();
+	const borderColorClassNames = new Array(3).fill("border-[#D8D8D8]");
+	switch (locations.pathname) {
+		case "/": {
+			borderColorClassNames[0] = "border-[#002E5D]";
+			break;
+		}
+		case "/about": {
+			borderColorClassNames[1] = "border-[#002E5D]";
+			break;
+		}
+		case "/news": {
+			borderColorClassNames[2] = "border-[#002E5D]";
+			break;
+		}
+		default: {
+			break;
+		}
+	}
 	return (
 		<nav className="bg-white py-4">
 			<div className="container mx-auto flex justify-between items-center px-4">
@@ -13,24 +33,33 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className="hidden md:flex">
-					<a
-						href="#"
-						className="px-8 py-4 text-gray-600 rounded-full border-[#002E5D] border"
+					<Link
+						to="/"
+						className={
+							"px-8 py-4 text-gray-600 rounded-full border " +
+							borderColorClassNames[0]
+						}
 					>
 						Home
-					</a>
-					<a
-						href="#"
-						className="px-8 py-4 text-gray-600 rounded-full border-[#D8D8D8] border"
+					</Link>
+					<Link
+						to="/about"
+						className={
+							"px-8 py-4 text-gray-600 rounded-full border " +
+							borderColorClassNames[1]
+						}
 					>
 						About Us
-					</a>
-					<a
-						href="#"
-						className="px-8 py-4 text-gray-600 rounded-full border-[#D8D8D8] border"
+					</Link>
+					<Link
+						to="/news"
+						className={
+							"px-8 py-4 text-gray-600 rounded-full border " +
+							borderColorClassNames[2]
+						}
 					>
 						News
-					</a>
+					</Link>
 				</div>
 				<div className="flex">
 					<a
