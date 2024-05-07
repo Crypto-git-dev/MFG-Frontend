@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import Features from "../../components/features/features";
-import Blogs from "../../components/blogs/blogs";
 import AbousUs from "../../components/about/aboutUs";
-import Contact from "../../components/contact/contact";
-import Investor from "../../components/investor/investor";
+import Contact from "../../components/about/contact";
 import FigureView from "../../components/about/figure";
+import Team from "../../components/about/team";
+import Partners from "../../components/about/partners";
 
 const AboutUs = () => {
 	useEffect(() => {
@@ -29,6 +28,15 @@ const AboutUs = () => {
 				<FigureView />
 			</section>
 			<div class="border-t border-gray-300 -mx-20"></div>
+			<section id="team">
+				<Team />
+			</section>
+			<section id="contact">
+				<Contact />
+			</section>
+			<section id="partner">
+				<Partners />
+			</section>
 		</div>
 	);
 };
