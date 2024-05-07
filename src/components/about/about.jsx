@@ -15,10 +15,10 @@ const HeroSection = () => {
 					<button className="mt-16 mb-16 bg-[#F7C926] font-bold py-4 px-4 rounded-full">
 						<img src="images/DownArrow.svg"></img>
 					</button>
-					<h2 className="text-3xl font-semibold mb-4">
+					<h2 className="text-4xl font-semibold mb-4">
 						ABOUT MYTH FINANCIAL GROUP
 					</h2>
-					<p className="text-grey10 text-sm">
+					<p className="text-gray-700 text-lg">
 						At Myth Financial Group, we believe in fearless investments in the
 						future of families. We specialize in providing life insurance
 						coverage in over 5 industries, including healthcare, education, and
@@ -27,7 +27,7 @@ const HeroSection = () => {
 						needs and requirements.
 					</p>
 				</div>
-				<div className="basis-1/2">
+				<div className="basis-1/2 -mt-24">
 					<img src="images/Mask group.jpg" alt="Handshake" className="" />
 				</div>
 			</div>

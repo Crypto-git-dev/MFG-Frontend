@@ -28,7 +28,7 @@ const Contact = (props) => {
 				</div>
 				<div>
 					<form action="#" method="POST">
-						<div class="grid grid-cols-2 gap-5 ">
+						<div class="grid grid-cols-2 gap-5 text-black">
 							<input
 								type="text"
 								placeholder="Name"

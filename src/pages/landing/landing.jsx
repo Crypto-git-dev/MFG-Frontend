@@ -22,7 +22,7 @@ const Landing = () => {
 	}, []);
 	return (
 		<div>
-			<div className="px-32 md:px-96 py-8">
+			<div className="px-32 md:px-96 py-8 ">
 				<Header />
 				<section id="about">
 					<About />

@@ -25,10 +25,12 @@ module.exports = {
 				"4xl": "3.8rem",
 				"3xl": "1.5rem",
 				"5xl": "3rem",
-				"1xl": "1.3rem",
+				"1xl": "1.4rem",
 				sm: "14px", // Another custom size
 				"6xl": "4.8rem", // Another custom size
 				lxl: "130px",
+				"4xl": "2.2rem",
+				"2.5xl": "1.8rem",
 			},
 			fontFamily: {
 				body: ["GT Walsheim Trial"],
@@ -37,6 +39,7 @@ module.exports = {
 				white10: "white",
 				dark10: "black",
 				yellow500: "#F7C926",
+				shallowgray: "#F9F9F9",
 			},
 		},
 	},

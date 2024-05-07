@@ -20,7 +20,7 @@ const Footer = () => {
 					</div>
 					<div class="w-1/6"></div>
 				</div>
-				<div class="bg-[#002E5D] text-right px-20 grid py-10">
+				<div class="bg-[#002E5D] text-right px-32 md:px-96  grid py-10">
 					<div class="flex gap-5 justify-between items-center">
 						<div class="flex items-center">
 							<img src="images/group2.svg" alt="MFG Logo" class="h-8" />{" "}
@@ -36,26 +36,26 @@ const Footer = () => {
 						<div class="flex gap-2">
 							<a
 								href="#"
-								class="bg-gray-700 px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
+								class=" px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
 							>
 								<i class="fa fa-facebook">f</i>
 							</a>
 							<a
 								href="#"
-								class="bg-gray-700 px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
+								class=" px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
 							>
 								<i class="fa fa-xing">x</i>
 							</a>
 							<a
 								href="#"
-								class="bg-gray-700 px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
+								class=" px-5 py-2 rounded-full text-white10 text-3xl border-[#ffffff] border"
 							>
 								<i class="fa fa-linkedin">in</i>
 							</a>
 						</div>
 					</div>
-					<div class="flex items-center border-y-2 border-[#204871] py-5 justify-between">
-						<div class="text-grey10 text-xs w-1/3 text-left">
+					<div class="flex items-center border-y-2 border-[#204871] py-10 justify-between">
+						<div class="text-grey10 text-sm w-1/2 text-left">
 							At Myth Financial Group, we believe in fearless investments in the
 							future of families. We specialize in providing life insurance
 							coverage in over 5 industries, including healthcare, education,
@@ -63,12 +63,12 @@ const Footer = () => {
 							with the best life insurance solutions that are tailored to your
 							specific needs and requirements.
 						</div>
-						<div class="bg-[#F7C926] font-bold py-4 px-4 rounded-full border-black border">
-							<img src="images/DownArrow.svg"></img>
+						<div class="bg-[#F7C926] font-bold py-4 px-4 rounded-full">
+							<img src="images/uparrow.svg"></img>
 						</div>
 					</div>
 					<div class="flex text-white10 justify-between text-xs py-5">
-						<div>© 2024 by Roland VC. Powered and secured by Wix</div>
+						<div>© 2024 by Roland VC. Powered and secured by Wix</div>
 						<div>info@mysite.com</div>
 						<div>123-456-7890</div>
 					</div>

@@ -24,10 +24,13 @@ const Blogs = () => {
 					OUR BLOGS
 				</h2>
 				<div class="grid grid-cols-2 gap-16">
-					{blogs.map((blog) => (
-						<div class="bg-gray-100 p-4 px-10 rounded-2xl border-grey10 border">
-							<div class="h-54 bg-gray-300 rounded-md mb-4">
-								<img src={blog.imgurl}></img>
+					{blogs.map((blog, index) => (
+						<div class=" p-4 px-10 rounded-2xl border-grey10 border">
+							<div class="h-54 mb-4">
+								<img
+									src={blog.imgurl}
+									className={index ? "rounded-3xl" : ""}
+								></img>
 							</div>
 							<div class="flex justify-between text-center gap-8">
 								<div class="text-sm font-semibold text-left">{blog.title}</div>
