@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
-		<div class="flex bg-blue-900 text-white py-12">
+		<div class="flex text-white pt-12">
 			<div class="grid w-full">
-				<div class="flex items-center justify-center gap-10 px-20 py-5 bg-[#F7C926]">
+				<div class="flex gap-20 px-32 md:px-96 py-8 text-black bg-[#F7C926]">
 					<div class="text-5xl font-bold mb-4">
 						JOIN THE DISCUSSION WITH OUR TEAM
 					</div>
-					<div class="bg-[#F7C926] font-bold py-4 px-4 rounded-full border-black border">
+					<div class="bg-[#F7C926] font-bold py-12 px-12 rounded-full border-black border ">
 						<img src="images/Gotocontact.svg"></img>
 					</div>
 					<div class="w-1/6"></div>

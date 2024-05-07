@@ -1,9 +1,15 @@
 import React from "react";
+import ToggleButton from "./Toggle";
 
 const HeroSection = () => {
 	return (
 		<div className="bg-white py-16">
-			<img src="images/welcome.svg"></img>
+			<div className="flex">
+				<img src="images/welcome.svg"></img>
+				<div className="justify-items-end">
+					<ToggleButton />
+				</div>
+			</div>
 			<div className="flex gap-6">
 				<div className="basis-1/2">
 					<button className="mt-16 mb-16 bg-[#F7C926] font-bold py-4 px-4 rounded-full">
