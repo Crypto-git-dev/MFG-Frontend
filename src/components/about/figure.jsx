@@ -8,11 +8,14 @@ const FigureView = () => {
 		{ figure: "1000+", caption: "Satisfied Clients" },
 	];
 	return (
-		<div className="grid grid-rows-4">
+		<div className="grid grid-cols-4 py-12">
 			{figures.map((figureInformation) => {
 				return (
-					<div>
-						<p className="">{figureInformation.figure}</p>
+					<div className="flex flex-col items-center justify-center gap-4">
+						<h1 className="text-black text-5xl font-semibold">
+							{figureInformation.figure}
+						</h1>
+						<p className="text-gray-700 text-sm">{figureInformation.caption}</p>
 					</div>
 				);
 			})}

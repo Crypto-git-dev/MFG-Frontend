@@ -4,6 +4,7 @@ import Blogs from "../../components/blogs/blogs";
 import AbousUs from "../../components/about/aboutUs";
 import Contact from "../../components/contact/contact";
 import Investor from "../../components/investor/investor";
+import FigureView from "../../components/about/figure";
 
 const AboutUs = () => {
 	useEffect(() => {
@@ -23,18 +24,11 @@ const AboutUs = () => {
 			<section id="aboutUs">
 				<AbousUs />
 			</section>
-			<section id="features">
-				<Features />
+			<div class="border-t border-gray-300 -mx-20"></div>
+			<section id="figures" className="-mx-20">
+				<FigureView />
 			</section>
-			<section id="blogs">
-				<Blogs />
-			</section>
-			<section id="contact">
-				<Contact />
-			</section>
-			<section id="investors">
-				<Investor />
-			</section>
+			<div class="border-t border-gray-300 -mx-20"></div>
 		</div>
 	);
 };
