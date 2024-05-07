@@ -25,7 +25,7 @@ const Footer = () => {
 						<div class="flex items-center">
 							<img src="images/group2.svg" alt="MFG Logo" class="h-8" />{" "}
 							{/* Adjust the path and size as needed */}
-							<div class="flex flex-col py-3 text-white10">
+							<div class="flex flex-col py-3 items-start text-white10">
 								<div class="text-lg">MFG</div>
 								<span class="text-xs">Myth Financial Group</span>
 							</div>
