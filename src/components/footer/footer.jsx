@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = (props) => {
 	return (
 		<div class="flex text-white pt-12">
 			<div class="grid w-full">
@@ -54,7 +54,12 @@ const Footer = () => {
 							with the best life insurance solutions that are tailored to your
 							specific needs and requirements.
 						</div>
-						<div class="bg-[#F7C926] font-bold py-4 px-4 rounded-full">
+						<div
+							class="bg-[#F7C926] font-bold py-4 px-4 rounded-full hover:cursor-pointer"
+							onClick={() => {
+								props.handleClickUpArrow();
+							}}
+						>
 							<img src="images/uparrow.svg"></img>
 						</div>
 					</div>

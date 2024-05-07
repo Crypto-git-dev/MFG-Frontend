@@ -9,9 +9,9 @@ const features = [
 	{ title: "Make a Income Steam and Become Financial Free" },
 ];
 
-const Features = () => {
+const Features = React.forwardRef((props, ref) => {
 	return (
-		<div className="py-12 bg-white">
+		<div className="py-12 bg-white" ref={ref}>
 			<h2 className="text-center text-5xl font-bold text-black mb-10 p-10">
 				WHY CHOOSE MYTH FINANCIAL
 				<br /> GROUP?
@@ -28,6 +28,6 @@ const Features = () => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default Features;

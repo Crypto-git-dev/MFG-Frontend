@@ -47,6 +47,7 @@ module.exports = {
 				lxl: "130px",
 				"4xl": "2.2rem",
 				"2.5xl": "1.8rem",
+				"4.5xl": "2.8rem",
 			},
 			fontFamily: {
 				body: ["GT Walsheim Trial"],

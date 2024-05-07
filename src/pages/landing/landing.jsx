@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Features from "../../components/features/features";
 import Blogs from "../../components/blogs/blogs";
 import About from "../../components/about/about";
@@ -6,6 +6,7 @@ import Contact from "../../components/contact/contact";
 import Investor from "../../components/investor/investor";
 
 const Landing = () => {
+	const featureRef = useRef(null);
 	useEffect(() => {
 		// Check if there's a URL fragment
 		const targetSection = window.location.hash;
@@ -18,13 +19,17 @@ const Landing = () => {
 			}
 		}
 	}, []);
+	const handleClickDownArrow = () => {
+		console.log(featureRef);
+		featureRef.current.scrollIntoView({ behavior: "smooth" });
+	};
 	return (
 		<div>
 			<section id="about">
-				<About />
+				<About handleClickDownArrow={handleClickDownArrow} />
 			</section>
 			<section id="features">
-				<Features />
+				<Features ref={featureRef} />
 			</section>
 			<section id="blogs">
 				<Blogs />

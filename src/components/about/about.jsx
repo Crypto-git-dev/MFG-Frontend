@@ -1,7 +1,8 @@
 import React from "react";
 import ToggleButton from "./Toggle";
 
-const HeroSection = () => {
+const HeroSection = (props) => {
+	const { handleClickDownArrow } = props;
 	return (
 		<div className="grid bg-white py-16">
 			<div className="flex relative">
@@ -20,7 +21,10 @@ const HeroSection = () => {
 			</div>
 			<div className="flex gap-6">
 				<div className="basis-1/2">
-					<button className="mt-16 mb-16 bg-[#F7C926] font-bold py-4 px-4 rounded-full">
+					<button
+						className="mt-16 mb-16 bg-[#F7C926] font-bold py-4 px-4 rounded-full "
+						onClick={() => handleClickDownArrow()}
+					>
 						<img src="images/DownArrow.svg"></img>
 					</button>
 					<h2 className="text-4xl font-semibold mb-4">

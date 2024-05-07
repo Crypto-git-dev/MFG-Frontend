@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Features from "../../components/features/features";
 import Blogs from "../../components/blogs/blogs";
-import About from "../../components/about/about";
+import AbousUs from "../../components/about/aboutUs";
 import Contact from "../../components/contact/contact";
 import Investor from "../../components/investor/investor";
 
@@ -20,8 +20,8 @@ const AboutUs = () => {
 	}, []);
 	return (
 		<div>
-			<section id="about">
-				<About />
+			<section id="aboutUs">
+				<AbousUs />
 			</section>
 			<section id="features">
 				<Features />
