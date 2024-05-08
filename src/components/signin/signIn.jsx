@@ -29,7 +29,7 @@ const SignInComponent = (props) => {
 							type="email"
 							name="email"
 							id="email"
-							class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-lg rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 px-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+							class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-lg rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 py-3 px-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 							placeholder="Enter your email"
 							required=""
 						/>
@@ -46,7 +46,7 @@ const SignInComponent = (props) => {
 							name="password"
 							id="password"
 							placeholder="Enter your password"
-							class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-lg rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 px-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+							class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-lg rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 py-3 px-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 							required=""
 						/>
 					</div>
@@ -68,7 +68,7 @@ const SignInComponent = (props) => {
 					</div>
 					<button
 						type="submit"
-						class="w-full bg-[#002E5D] text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+						class="w-full bg-[#002E5D] text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-lg py-3 px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
 					>
 						Sign in
 					</button>
@@ -92,7 +92,10 @@ const SignInComponent = (props) => {
 						<div className="flex flex-row items-start text-gray-700">
 							<p>Already have an Account?</p>
 						</div>
-						<Link className="flex flex-row-reverse items-start text-[#002E5D] font-semibold">
+						<Link
+							to="/signup"
+							className="flex flex-row-reverse items-start text-[#002E5D] font-semibold"
+						>
 							<p>Sign Up now</p>
 						</Link>
 					</div>
