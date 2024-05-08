@@ -261,7 +261,7 @@ const SignUpForms = () => {
 						<p>Already have an account?</p>
 					</div>
 					<Link
-						to="/signup"
+						to="/signin"
 						className="flex flex-row-reverse items-start text-[#002E5D] font-semibold"
 					>
 						<p>Log in</p>
