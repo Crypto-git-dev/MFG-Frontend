@@ -29,7 +29,7 @@ const Navbar = (props) => {
 					{/* Adjust the path and size as needed */}
 					<div className="flex flex-col py-3">
 						<span className="text-lg font-semibold">MFG</span>
-						<span className="text-xs font-semibold">Myth Financial Group</span>
+						<span className="text-xs">Myth Financial Group</span>
 					</div>
 				</div>
 				<div className="hidden md:flex">
@@ -62,15 +62,18 @@ const Navbar = (props) => {
 					</Link>
 				</div>
 				<div className="flex">
-					<a
-						href="#"
+					<Link
+						to="/signin"
 						className="px-4 py-4 text-gray-600 hover:bg-gray-100 rounded-full border-[#D8D8D8] border"
 					>
 						<img src="images/join.svg" className=""></img>
-					</a>
-					<button className="px-8 py-4 bg-dark10 text-white10 justify-self-end rounded-full">
+					</Link>
+					<Link
+						to="/join"
+						className="px-8 py-4 bg-dark10 text-white10 justify-self-end rounded-full"
+					>
 						Join Team
-					</button>
+					</Link>
 				</div>
 			</div>
 		</nav>
