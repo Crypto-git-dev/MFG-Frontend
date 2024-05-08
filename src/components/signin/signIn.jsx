@@ -15,7 +15,7 @@ const SignInComponent = (props) => {
 					SIGN IN
 				</h1>
 				<form
-					class="space-y-4 md:space-y-6 py-8 flex flex-col gap-8 pr-4"
+					class="space-y-4 md:space-y-6 py-8 flex flex-col gap-4 pr-4"
 					action="#"
 				>
 					<div>
