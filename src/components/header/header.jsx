@@ -62,12 +62,12 @@ const Navbar = (props) => {
 					</Link>
 				</div>
 				<div className="flex">
-					<a
-						href="#"
+					<Link
+						to="/signin"
 						className="px-4 py-4 text-gray-600 hover:bg-gray-100 rounded-full border-[#D8D8D8] border"
 					>
 						<img src="images/join.svg" className=""></img>
-					</a>
+					</Link>
 					<button className="px-8 py-4 bg-dark10 text-white10 justify-self-end rounded-full">
 						Join Team
 					</button>
