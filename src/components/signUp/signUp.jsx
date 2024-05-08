@@ -150,8 +150,11 @@ const SignUpForms = (props) => {
 						</div>
 					</form>
 				</div>
-				<div className="flex flex-row-reverse">
-					<img src="images/signin/handshake.png"></img>
+				<div className="flex flex-row-reverse items-start py-8">
+					<img
+						src="images/signin/handshake.png"
+						className="object-contain"
+					></img>
 				</div>
 			</div>
 		</div>
