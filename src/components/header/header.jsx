@@ -29,7 +29,7 @@ const Navbar = (props) => {
 					{/* Adjust the path and size as needed */}
 					<div className="flex flex-col py-3">
 						<span className="text-lg font-semibold">MFG</span>
-						<span className="text-xs font-semibold">Myth Financial Group</span>
+						<span className="text-xs">Myth Financial Group</span>
 					</div>
 				</div>
 				<div className="hidden md:flex">
