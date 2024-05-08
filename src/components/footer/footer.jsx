@@ -1,16 +1,24 @@
+import { useLocation } from "react-router-dom";
+
 const Footer = (props) => {
+	const urlLocation = useLocation();
+	const allowedJoiningDiscussions = ["home", "about", "news"];
+	const isShowJoiningDiscussion =
+		allowedJoiningDiscussions.indexOf(urlLocation.pathname.slice(1)) != -1;
 	return (
 		<div class="flex text-white pt-12">
 			<div class="grid w-full">
-				<div class="flex gap-20 px-32 md:px-96 py-8 text-black bg-[#F7C926]">
-					<div class="text-5xl font-bold mb-4">
-						JOIN THE DISCUSSION WITH OUR TEAM
+				{isShowJoiningDiscussion ? (
+					<div class="flex gap-20 px-32 md:px-96 py-8 text-black bg-[#F7C926]">
+						<div class="text-5xl font-bold mb-4">
+							JOIN THE DISCUSSION WITH OUR TEAM
+						</div>
+						<div class="bg-[#F7C926] font-bold py-12 px-12 rounded-full border-black border ">
+							<img src="images/Gotocontact.svg"></img>
+						</div>
+						<div class="w-1/6"></div>
 					</div>
-					<div class="bg-[#F7C926] font-bold py-12 px-12 rounded-full border-black border ">
-						<img src="images/Gotocontact.svg"></img>
-					</div>
-					<div class="w-1/6"></div>
-				</div>
+				) : null}
 				<div class="bg-[#002E5D] text-right px-32 md:px-96  grid py-10">
 					<div class="flex gap-5 justify-between items-center">
 						<div class="flex items-center">
