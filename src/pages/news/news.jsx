@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Title from "../../components/news/title";
+import NewsContent from "../../components/news/news";
 
 const News = () => {
 	const featureRef = useRef(null);
@@ -19,6 +20,9 @@ const News = () => {
 		<div>
 			<section id="title">
 				<Title />
+			</section>
+			<section id="news">
+				<NewsContent />
 			</section>
 		</div>
 	);
