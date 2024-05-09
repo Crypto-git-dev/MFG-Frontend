@@ -24,7 +24,6 @@ const PageRouter = () => {
 					<Route exact path="/news" element={<News />} />
 					<Route exact path="/signin" element={<SignIn />} />
 					<Route exact path="/signup" element={<SignUp />} />
-					<Route exact path="/join" element={<Join />} />
 				</Routes>
 			</div>
 			<div>
