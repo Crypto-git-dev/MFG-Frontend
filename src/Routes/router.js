@@ -8,6 +8,7 @@ import News from "../pages/news/news";
 import SignIn from "../pages/signIn/signIn";
 import SignUp from "../pages/signUp/signUp";
 import Join from "../pages/signUp/Join";
+import Agent from "../pages/agent/agent";
 
 const PageRouter = () => {
 	const headerRef = useRef(null);
@@ -24,6 +25,7 @@ const PageRouter = () => {
 					<Route exact path="/news" element={<News />} />
 					<Route exact path="/signin" element={<SignIn />} />
 					<Route exact path="/signup" element={<SignUp />} />
+					<Route exact path="/agent" element={<Agent />} />
 				</Routes>
 			</div>
 			<div>
