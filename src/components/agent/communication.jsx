@@ -13,6 +13,18 @@ const AgentCommunication = (props) => {
 				>
 					COMMENTS
 				</h1>
+				<h1>Let's meet together</h1>
+				<div className="flex flex-row gap-4">
+					<button className="p-2 w-10 rounded-lg border border-gray-700 text-[#002E5D]">
+						<h1 className="text-md">B</h1>
+					</button>
+					<button className="p-2 w-10 rounded-lg border border-gray-700 bg-[#002E5D] text-white">
+						<h1 className="text-md">I</h1>
+					</button>
+					<button className="p-2 w-10 rounded-lg border border-gray-700 text-[#002E5D]">
+						<h1 className="text-md">U</h1>
+					</button>
+				</div>
 				<div className="bottom-8 right-8 absolute">
 					<div className="flex flex-row gap-4">
 						<button className="p-4 rounded-lg border border-gray-700">
