@@ -3,9 +3,10 @@ import { useLocation } from "react-router-dom";
 const Footer = (props) => {
 	const urlLocation = useLocation();
 	const allowedJoiningDiscussions = ["home", "about", "news"];
+	const isShowFooter = urlLocation.pathname.slice(1) != "signup";
 	const isShowJoiningDiscussion =
 		allowedJoiningDiscussions.indexOf(urlLocation.pathname.slice(1)) != -1;
-	return (
+	return isShowFooter ? (
 		<div class="flex text-white pt-12">
 			<div class="grid w-full">
 				{isShowJoiningDiscussion ? (
@@ -79,7 +80,7 @@ const Footer = (props) => {
 				</div>
 			</div>
 		</div>
-	);
+	) : null;
 };
 
 export default Footer;
