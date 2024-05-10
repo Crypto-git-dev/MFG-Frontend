@@ -15,7 +15,7 @@ const SignInComponent = (props) => {
 					SIGN IN
 				</h1>
 				<form
-					class="space-y-4 md:space-y-6 py-8 flex flex-col gap-4 pr-4"
+					class="space-y-4 md:space-y-6 py-24 flex flex-col gap-4 pr-4"
 					action="#"
 				>
 					<div>
@@ -72,33 +72,6 @@ const SignInComponent = (props) => {
 					>
 						Sign in
 					</button>
-					<div className="flex flex-row justify-between items-center">
-						<div class="border-t border-gray-400 w-2/5"></div>
-						<p class="text-gray-700 text-sm">or continue with</p>
-						<div class="border-t border-gray-400 w-2/5"></div>
-					</div>
-					<div class="flex items-center justify-center dark:bg-gray-800">
-						<button class="px-4 py-2 border flex gap-2 w-full justify-center border-gray-300 dark:border-slate-700 rounded-full font-semibold text-black dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
-							<img
-								class="w-6 h-6"
-								src="https://www.svgrepo.com/show/475656/google-color.svg"
-								loading="lazy"
-								alt="google logo"
-							/>
-							<span>Login with Google</span>
-						</button>
-					</div>
-					<div className="grid grid-cols-2">
-						<div className="flex flex-row items-start text-gray-700">
-							<p>Already have an Account?</p>
-						</div>
-						<Link
-							to="/signup"
-							className="flex flex-row-reverse items-start text-[#002E5D] font-semibold"
-						>
-							<p>Sign Up now</p>
-						</Link>
-					</div>
 				</form>
 			</div>
 			<div className="flex flex-row-reverse">
