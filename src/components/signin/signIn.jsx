@@ -15,7 +15,7 @@ const SignInComponent = (props) => {
 					SIGN IN
 				</h1>
 				<form
-					class="space-y-4 md:space-y-6 py-24 flex flex-col gap-4 pr-4"
+					class="space-y-4 md:space-y-6 py-16 flex flex-col gap-4 pr-4"
 					action="#"
 				>
 					<div>
@@ -72,6 +72,17 @@ const SignInComponent = (props) => {
 					>
 						Sign in
 					</button>
+					<div className="grid grid-cols-2">
+						<div className="flex flex-row items-start text-gray-700">
+							<p>New to MFG?</p>
+						</div>
+						<Link
+							to="/signup"
+							className="flex flex-row-reverse items-start text-[#002E5D] font-semibold"
+						>
+							<p>Join Now</p>
+						</Link>
+					</div>
 				</form>
 			</div>
 			<div className="flex flex-row-reverse">
