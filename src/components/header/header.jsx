@@ -69,7 +69,7 @@ const Navbar = (props) => {
 						<img src="images/join.svg" className=""></img>
 					</Link>
 					<Link
-						to="/join"
+						to="/signup"
 						className="px-8 py-4 bg-dark10 text-white10 justify-self-end rounded-full"
 					>
 						Join Team
